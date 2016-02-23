@@ -22,7 +22,7 @@
 
 #pragma mark - String
 
-#define KD_NSSTRING_IS_INVALID(s) ( !s || s.length <= 0 || [s isEqualToString:@"(null)"] || [s isKindOfClass:[NSNull class]])
+#define LC_NSSTRING_IS_INVALID(s) ( !s || s.length <= 0 || [s isEqualToString:@"(null)"] || [s isKindOfClass:[NSNull class]])
 
 #define DEFAULT_FONT(sizeint)           [UIFont fontWithName:@"Helvetica" size:sizeint]
 #define DEFAULT_BUTTON_FONT(sizeint)    [UIFont fontWithName:@"Helvetica-Bold" size:sizeint]

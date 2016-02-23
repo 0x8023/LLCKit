@@ -12,6 +12,7 @@
 
 #if (TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR)
 
+#define IOS9_OR_LATER	( [[[UIDevice currentDevice] systemVersion] compare:@"9.0"] != NSOrderedAscending )
 #define IOS8_OR_LATER	( [[[UIDevice currentDevice] systemVersion] compare:@"8.0"] != NSOrderedAscending )
 #define IOS7_OR_LATER	( [[[UIDevice currentDevice] systemVersion] compare:@"7.0"] != NSOrderedAscending )
 #define IOS6_OR_LATER	( [[[UIDevice currentDevice] systemVersion] compare:@"6.0"] != NSOrderedAscending )
@@ -21,6 +22,8 @@
 
 #else
 
+#define IOS9_OR_LATER	(NO)
+#define IOS8_OR_LATER	(NO)
 #define IOS7_OR_LATER   (NO)
 #define IOS6_OR_LATER	(NO)
 #define IOS5_OR_LATER	(NO)

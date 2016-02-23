@@ -108,6 +108,7 @@
 		6235370B1C62098E007234D8 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6235370C1C62098E007234D8 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		6235370D1C62098E007234D8 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6271C8321C7BF8290092EADD /* LCKit.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCKit.pch; sourceTree = "<group>"; };
 		62EAA3591C488CA60037F6F3 /* LCKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LCKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62EAA3751C488CA60037F6F3 /* LCKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LCKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		62EAA3791C488CA60037F6F3 /* LCKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCKitTests.m; sourceTree = "<group>"; };
@@ -156,6 +157,7 @@
 				6235370B1C62098E007234D8 /* main.m */,
 				6235370C1C62098E007234D8 /* ViewController.h */,
 				6235370D1C62098E007234D8 /* ViewController.m */,
+				6271C8321C7BF8290092EADD /* LCKit.pch */,
 			);
 			path = LCKit;
 			sourceTree = "<group>";
@@ -235,13 +237,13 @@
 		623536F21C62098E007234D8 /* LCObject */ = {
 			isa = PBXGroup;
 			children = (
+				623536F91C62098E007234D8 /* LCObject.h */,
 				623536F31C62098E007234D8 /* LCDateFormatter.h */,
 				623536F41C62098E007234D8 /* LCDateFormatter.m */,
 				623536F51C62098E007234D8 /* LCFileManager.h */,
 				623536F61C62098E007234D8 /* LCFileManager.m */,
 				623536F71C62098E007234D8 /* LCLog.h */,
 				623536F81C62098E007234D8 /* LCLog.mm */,
-				623536F91C62098E007234D8 /* LCObject.h */,
 				623536FA1C62098E007234D8 /* LCSanbox.h */,
 				623536FB1C62098E007234D8 /* LCSanbox.m */,
 				623536FC1C62098E007234D8 /* LCUserDefaults.h */,
@@ -595,7 +597,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LCKit/LCKit.pch";
 				INFOPLIST_FILE = LCKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Orange.LCKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -606,7 +610,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LCKit/LCKit.pch";
 				INFOPLIST_FILE = LCKit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Orange.LCKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";

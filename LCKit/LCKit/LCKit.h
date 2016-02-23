@@ -16,4 +16,6 @@
 #import "LCObject.h"
 #import "LCView.h"
 
+#define LC_LOG_ENABLE (1)
+
 #endif /* LCKit_h */
