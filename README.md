@@ -3,15 +3,18 @@
 ### LCDefine
 
 * 你可以这样判断IOS系统 
-   
-    	 if(IOS7_OR_LATER) {...}
-    	 
-* 你可以这样获取屏幕的尺寸
 
-	    NSLog(@"屏幕宽度 ：%f", LC_DEVICE_WIDTH);
-	    
-	    NSLog(@"屏幕高度 ：%f", LC_DEVICE_HEIGHT);
-	    
+   ```
+   if(IOS7_OR_LATER) {...}
+   ``` 
+* 你可以这样获取屏幕的尺寸
+	
+	```	
+	NSLog(@"屏幕宽度 ：%f", LC_DEVICE_WIDTH);
+    
+    NSLog(@"屏幕高度 ：%f", LC_DEVICE_HEIGHT);
+	```	
+  
 * 获取 AppDelegate 单例 ：`LC_APPDELEGATE`
 
 * 获取 keyWindow ：`LC_KEYWINDOW`
@@ -27,10 +30,13 @@
 ### LCFoundation
 
 * BaseViewController 基类（可不是鸡肋）可以做统一的处理。再看看 `BaseViewController+ImagePicker.h` 你可以直接在子类中
-		
-	    [self showImagePickerViewWithTitle:@"选择照片" complateBlock:^(UIImage *image) {
-	       //直接都到选择的照片了。很快吧，至少不用再用很多的代码写一些代理...
-	    }];
+
+	```	
+    [self showImagePickerViewWithTitle:@"选择照片" complateBlock:^(UIImage *image) {
+       //直接都到选择的照片了。很快吧，至少不用再用很多的代码写一些代理...
+    }];
+	```
+
 * 同样的 `UIViewController+NavigationExtension.h`这个扩展就可以让你快捷的添加和删除导航栏上的按钮了。
 
 * 这样说来一些扩展真的很方便：看看 `LCExtension.h`里边的东东，全是一些扩展
@@ -60,7 +66,10 @@
 	  
 	* UIImage+Extension 里面都是图片的处理 ，注意一下这个,如果一些简单的色值转化成图片很方便，少用，因为它会在绘制的时候占用的你的内存。
 	
-	  `+(UIImage *) imageWithColor:(UIColor *)color size:(CGSize)size;`
+		```
+		 +(UIImage *) imageWithColor:(UIColor *)color size:(CGSize)size;
+		  
+		```
 
 	* UIView+Extension 这里边你可以用一些x、y、width、height等属性直接取到view的frame的值。`natureForm`让一些控件属性设置不那么啰嗦 
 	
