@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 #undef	NSLog
-#define	NSLog(desc,...) NSLog(desc, ##__VA_ARGS__)
+#define	NSLog(desc,...) LCLog(desc, ##__VA_ARGS__)
 
 
 #undef  INFO

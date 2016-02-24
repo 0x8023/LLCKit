@@ -81,6 +81,8 @@ extern "C" void LCInfo( NSObject * format, ... )
 
 extern "C" void LCError( NSString * file, const char * function , int line, NSObject * format, ... )
 {
+#if defined(LC_LOG_ENABLE) && LC_LOG_ENABLE
+
     va_list args;
     va_start( args, format );
     
@@ -104,9 +106,6 @@ extern "C" void LCError( NSString * file, const char * function , int line, NSOb
     printf("\n    Line : %d",line);
     printf("\n    Function : %s\n]\n\n",function);
     
-#if defined(LC_ERROR_LOCAL_FILE_LOG) && LC_ERROR_LOCAL_FILE_LOG
-    
-    // Write to file...
     
 #endif
     

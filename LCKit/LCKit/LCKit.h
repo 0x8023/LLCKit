@@ -16,6 +16,19 @@
 #import "LCObject.h"
 #import "LCView.h"
 
+
+
+//打印开关 如果DEBUG 打开打印开关否则关闭
+
+#if DEBUG
+
 #define LC_LOG_ENABLE (1)
+
+#else
+
+#define LC_LOG_ENABLE (0)
+
+#endif
+
 
 #endif /* LCKit_h */

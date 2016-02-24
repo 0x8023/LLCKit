@@ -68,7 +68,6 @@
 	
 		```
 		 +(UIImage *) imageWithColor:(UIColor *)color size:(CGSize)size;
-		  
 		```
 
 	* UIView+Extension 这里边你可以用一些x、y、width、height等属性直接取到view的frame的值。`natureForm`让一些控件属性设置不那么啰嗦 
