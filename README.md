@@ -60,6 +60,14 @@
 	
 	* LCLog 从写了 `NSLog` 添加了 `INFO` `ERROR` 的打印. 放心使用只要在Release时修改 #define LC_LOG_ENABLE (1) 就不会打印了
 	
+	* LCModel  基础数据模型 只需要将数据模型定义为 LCModel子类就可以了
+			
+			【字典->模型】  系统方法 - setValuesForKeysWithDictionary
+		 	【模型->字典】  - propertyDictionary				1、 未定义的属性不会自动生成属性进行赋值
+			2、 只读属性不可赋值
+		 	3、特殊关键字属性名转化 ： id -> objectId; description -> objectDescription
+		  	4、序列化 但只读属性不进行序列化操作
+		
 * `LCView` 这里面只做了扩展
 	
 	* UIColor+Extension 中可以用Hex值生成color ,你也知道MarkMan等软件标注的色值一般都是十六进制的。

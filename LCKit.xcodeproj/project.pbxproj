@@ -33,6 +33,7 @@
 		623537251C62098E007234D8 /* LCKit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 623537091C62098E007234D8 /* LCKit.xcdatamodeld */; };
 		623537261C62098E007234D8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6235370B1C62098E007234D8 /* main.m */; };
 		623537271C62098E007234D8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6235370D1C62098E007234D8 /* ViewController.m */; };
+		627A05711C92787F001D0BA8 /* LCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 627A05701C92787F001D0BA8 /* LCModel.m */; };
 		62EAA37A1C488CA60037F6F3 /* LCKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62EAA3791C488CA60037F6F3 /* LCKitTests.m */; };
 		62EAA3851C488CA60037F6F3 /* LCKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62EAA3841C488CA60037F6F3 /* LCKitUITests.m */; };
 /* End PBXBuildFile section */
@@ -109,6 +110,8 @@
 		6235370C1C62098E007234D8 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		6235370D1C62098E007234D8 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6271C8321C7BF8290092EADD /* LCKit.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCKit.pch; sourceTree = "<group>"; };
+		627A056F1C92787F001D0BA8 /* LCModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCModel.h; sourceTree = "<group>"; };
+		627A05701C92787F001D0BA8 /* LCModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCModel.m; sourceTree = "<group>"; };
 		62EAA3591C488CA60037F6F3 /* LCKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LCKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		62EAA3751C488CA60037F6F3 /* LCKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LCKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		62EAA3791C488CA60037F6F3 /* LCKitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCKitTests.m; sourceTree = "<group>"; };
@@ -237,6 +240,8 @@
 		623536F21C62098E007234D8 /* LCObject */ = {
 			isa = PBXGroup;
 			children = (
+				627A056F1C92787F001D0BA8 /* LCModel.h */,
+				627A05701C92787F001D0BA8 /* LCModel.m */,
 				623536F91C62098E007234D8 /* LCObject.h */,
 				623536F31C62098E007234D8 /* LCDateFormatter.h */,
 				623536F41C62098E007234D8 /* LCDateFormatter.m */,
@@ -443,6 +448,7 @@
 				623537141C62098E007234D8 /* BaseViewController+ImagePicker.m in Sources */,
 				623537221C62098E007234D8 /* UIImage+Extension.m in Sources */,
 				623537171C62098E007234D8 /* NSNull+Extension.m in Sources */,
+				627A05711C92787F001D0BA8 /* LCModel.m in Sources */,
 				623537211C62098E007234D8 /* UIColor+Extension.m in Sources */,
 				623537201C62098E007234D8 /* LCUserDefaults.m in Sources */,
 				6235370E1C62098E007234D8 /* AppDelegate.m in Sources */,
