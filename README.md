@@ -81,6 +81,14 @@
 	* UIView+Extension 这里边你可以用一些x、y、width、height等属性直接取到view的frame的值。`natureForm`让一些控件属性设置不那么啰嗦 
 	
 	* UIView+LCGesture 让View可以用一个方法就添加手势，注意 UIImageView 的 `userInteractionEnabled`属性添加手势时需要是YES。
+	
+	* LCPopWindow 弹出任何自定义的View到 keyWindow 层。需要使用的时候导入头文件
+	
+		```   
+		 self.popWindow = [LCPopWindow showView:label];
+		 [self.popWindow hide];
+
+		```
 
 	
 

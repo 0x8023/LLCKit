@@ -36,6 +36,7 @@
 		627A05711C92787F001D0BA8 /* LCModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 627A05701C92787F001D0BA8 /* LCModel.m */; };
 		62EAA37A1C488CA60037F6F3 /* LCKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62EAA3791C488CA60037F6F3 /* LCKitTests.m */; };
 		62EAA3851C488CA60037F6F3 /* LCKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 62EAA3841C488CA60037F6F3 /* LCKitUITests.m */; };
+		62F8463E1CA277A300E0E7D5 /* LCPopWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 62F8463D1CA277A300E0E7D5 /* LCPopWindow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +120,8 @@
 		62EAA3801C488CA60037F6F3 /* LCKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LCKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		62EAA3841C488CA60037F6F3 /* LCKitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LCKitUITests.m; sourceTree = "<group>"; };
 		62EAA3861C488CA60037F6F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		62F8463C1CA277A300E0E7D5 /* LCPopWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LCPopWindow.h; sourceTree = "<group>"; };
+		62F8463D1CA277A300E0E7D5 /* LCPopWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LCPopWindow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +272,8 @@
 				623537051C62098E007234D8 /* UIView+Extension.m */,
 				623537061C62098E007234D8 /* UIView+LCGesture.h */,
 				623537071C62098E007234D8 /* UIView+LCGesture.m */,
+				62F8463C1CA277A300E0E7D5 /* LCPopWindow.h */,
+				62F8463D1CA277A300E0E7D5 /* LCPopWindow.m */,
 			);
 			path = LCView;
 			sourceTree = "<group>";
@@ -464,6 +469,7 @@
 				623537181C62098E007234D8 /* NSObject+LCInstance.m in Sources */,
 				623537131C62098E007234D8 /* BaseViewController.m in Sources */,
 				623537261C62098E007234D8 /* main.m in Sources */,
+				62F8463E1CA277A300E0E7D5 /* LCPopWindow.m in Sources */,
 				623537161C62098E007234D8 /* NSData+Extension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
