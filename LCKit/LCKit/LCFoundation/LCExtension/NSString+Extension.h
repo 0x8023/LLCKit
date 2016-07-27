@@ -47,4 +47,7 @@
  *  去除空白和换行符号
  */
 - (NSString *)trim;
+
+- (NSString *)base64;
+
 @end
